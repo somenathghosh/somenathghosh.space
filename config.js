@@ -12,15 +12,25 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://localhost:3000/',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandbox94d744790d784360882b13ca4b5873e0.mailgun.org',
+                    pass: '0e54d5391263fce5aba2e4d15f61be5e'
+                }
+            }
+        },
         database: {
             client: 'postgres',
             connection: {
-                  host: 'ec2-107-21-219-235.compute-1.amazonaws.com',
-                  user: 'qhrysusondihzz',
-                  password: '038egRNbNQi2P0iy5Q4sHWCeI2',
-                  database: 'dfaf2v8t3osidd',
-                  port: '5432'
+                  host: 'ec2-54-243-149-147.compute-1.amazonaws.com',
+                  user: 'taaurtswsulcen',
+                  password: 'yCC2ezqs03j4m-OLrv9me8mKHK',
+                  database: 'daqappqk8g7k6p',
+                  port: '5432',
+                  ssl:true
             },
         },
 
