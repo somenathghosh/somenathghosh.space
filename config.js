@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://localhost:3000/',
+        url: 'https://ghost-heroku-1001.herokuapp.com/',
         mail: {
             transport: 'SMTP',
             options: {
