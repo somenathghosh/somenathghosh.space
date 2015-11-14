@@ -65,7 +65,8 @@
     "validator": "3.40.0",
     "xml": "1.0.0",
     "xmlbuilder" : "latest",
-    "xml2js":"latest"
+    "xml2js":"latest",
+    "aws-sdk-apis" : "latest"
   },
   "optionalDependencies": {
     "mysql": "2.1.1",
