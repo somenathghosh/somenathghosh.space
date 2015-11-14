@@ -12,6 +12,7 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'https://ghost-heroku-1001.herokuapp.com/',
+        //url: 'http://localhost:3000/',
         mail: {
             transport: 'SMTP',
             options: {
