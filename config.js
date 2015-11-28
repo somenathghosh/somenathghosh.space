@@ -11,8 +11,8 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'https://somenath-ghosh.herokuapp.com/',
-        //url: 'http://localhost:3000/',
+        //url: 'https://somenath-ghosh.herokuapp.com/',
+        url: 'http://localhost:3000/',
         mail: {
             transport: 'SMTP',
             options: {
