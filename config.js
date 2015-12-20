@@ -27,10 +27,14 @@ config = {
         database: {
             client: 'postgres',
             connection: {
-                  host: 'ec2-54-243-149-147.compute-1.amazonaws.com',
-                  user: 'taaurtswsulcen',
-                  password: 'yCC2ezqs03j4m-OLrv9me8mKHK',
-                  database: 'daqappqk8g7k6p',
+                  // host: 'ec2-54-243-149-147.compute-1.amazonaws.com',
+                  // user: 'taaurtswsulcen',
+                  // password: 'yCC2ezqs03j4m-OLrv9me8mKHK',
+                  // database: 'daqappqk8g7k6p',
+                  host: process.env.POSTGRES_HOST,
+                  user: process.env.POSTGRES_USER,
+                  password: process.env.POSTGRES_PASSWORD,
+                  database: process.env.POSTGRES_DATABASE,
                   port: '5432',
                   ssl:true
             },
