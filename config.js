@@ -19,8 +19,8 @@ config = {
             options: {
                 service: 'Mailgun',
                 auth: {
-                    // user: 'postmaster@sandbox94d744790d784360882b13ca4b5873e0.mailgun.org',
-                    // pass: '0e54d5391263fce5aba2e4d15f61be5e'
+                    //user: 'postmaster@sandbox94d744790d784360882b13ca4b5873e0.mailgun.org',
+                    //pass: '0e54d5391263fce5aba2e4d15f61be5e'
                     user: process.env.MAILGUN_USER,
                     pass: process.env.MAILGUN_PASSWORD
                 }
@@ -29,10 +29,10 @@ config = {
         database: {
             client: 'postgres',
             connection: {
-                  // host: 'ec2-54-243-149-147.compute-1.amazonaws.com',
-                  // user: 'taaurtswsulcen',
-                  // password: 'yCC2ezqs03j4m-OLrv9me8mKHK',
-                  // database: 'daqappqk8g7k6p',
+                  //host: 'ec2-54-243-149-147.compute-1.amazonaws.com',
+                  //user: 'taaurtswsulcen',
+                  //password: 'yCC2ezqs03j4m-OLrv9me8mKHK',
+                  //database: 'daqappqk8g7k6p',
                   host: process.env.POSTGRES_HOST,
                   user: process.env.POSTGRES_USER,
                   password: process.env.POSTGRES_PASSWORD,
