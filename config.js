@@ -11,8 +11,8 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://www.somenathghosh.space/',
-        //url: 'http://localhost:3001/',
+        //url: 'http://www.somenathghosh.space/',
+        url: 'http://localhost:3001/',
         mail: {
             transport: 'SMTP',
             options: {
