@@ -2,13 +2,13 @@ jQuery(function(a){function b(a){l?(a.removeClass("active"),j.removeClass("menu-
 
 
 //By default, Ghost opens links in the existing tab. Insert this in your Ghost JS file to get all your links to open in a new tab instead!
-    $('a').each(function() {
-   var a = new RegExp('/' + window.location.host + '/');
-   if(!a.test(this.href)) {
-       $(this).click(function(event) {
-           event.preventDefault();
-           event.stopPropagation();
-           window.open(this.href, '_blank');
-       });
-   }
-});
+//    $('a').each(function() {
+//   var a = new RegExp('/' + window.location.host + '/');
+//   if(!a.test(this.href)) {
+//       $(this).click(function(event) {
+//           event.preventDefault();
+//           event.stopPropagation();
+//           window.open(this.href, '_blank');
+//       });
+//   }
+//});
