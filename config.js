@@ -13,7 +13,7 @@ config = {
     production: {
         //url: 'http://ec2-50-112-191-199.us-west-2.compute.amazonaws.com',
         url: 'http://www.somenathghosh.space/',
-        //url: 'http://localhost:3001/',
+       // url: 'http://localhost:3001/',
         mail: {
             transport: 'SMTP',
             options: {
