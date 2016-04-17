@@ -68,7 +68,7 @@ body * {
 
 #header ul.taglist li {
   margin: 0;
-  padding: .2em .5em;
+  padding: .2em 1em;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   color: #111;
