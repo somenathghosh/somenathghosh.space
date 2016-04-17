@@ -1,4 +1,71 @@
 {{! The big featured header }}
+
+<style>
+
+ul
+{   
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+ul li
+{   
+    display: block;
+    position: relative;
+    float: left;
+}
+
+li ul
+{   
+    display: none;
+}
+
+ul li a
+{   
+    display: block;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+ul li a:hover
+{   
+    background: #617F8A;
+}
+li:hover ul
+{   
+    display: block;
+    position: absolute;
+    z-index:999;
+}
+    
+li:hover li
+{
+    float: none;
+        font-size: 11px;
+    width: 160px;
+}
+
+li:hover a
+{
+    background: #617F8A;
+}
+
+li:hover li a:hover
+{
+    background: #95A9B1;
+}
+
+
+</style>
+
+
+
+
 <header id="header">
     <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}">
 
@@ -8,13 +75,29 @@
       <div class="taglist-wrapper clearfix">
         <ul id="taglist" class="taglist">
             <li><a href="{{@blog.url}}">Home</a></li>
-            <li><a href="/tag/TUTORIAL">Series</a></li>
+            <li><a href="/tag/TUTORIAL">Series</a>
+                <ul>
+                 <li><a href="/tag/NODEJS-TURORIAL">NODEJS</a></li>
+                 <li><a href="/tag/Mongoose-TURORIAL">NODEJS+MongoDB</a></li>
+               </ul>
+            </li>
             <li><a href="/tag/JS">Javascript</a></li>
             <li><a href="/tag/NODEJS">Nodejs</a></li>
             <li><a href="/tag/SDM">SDM</a></li>
             <li><a href="/tag/ORACLE">Oracle</a></li>
             <li><a href="/tag/MISC">Misc</a></li>
-            <li><a href="/contact-me/">Contact Me</a></li>
+            <li><a href="/tag/INTERVIEW-QUESTION/">Interview Questions</a>
+
+               <ul>
+                 <li><a href="/tag/JS-INTERVIEW-QUESTION">JS</a></li>
+                 <li><a href="/tag/NODEJS-INTERVIEW-QUESTION">NODE</a></li>
+                 <li><a href="/tag/JAVA-INTERVIEW-QUESTION">Core JAVA</a></li>
+                 <li><a href="/tag/SHELL-SCRIPT-INERVIEW-QUESTION">SHELL SCRIPT</a></li>
+               </ul>
+            </li>
+                 
+            <li><a href="/my-notes/">My Notes</a></li>
+            <li><a href="/contact-me/">Know me</a></li>
         </ul>
       </div>
     </nav>
