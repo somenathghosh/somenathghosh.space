@@ -38,7 +38,7 @@ config = {
 
         server: {
             host: '0.0.0.0',
-            port: process.env.PORT || '49153'
+            port: process.env.PORT || '3001'
         }
     },
 
